@@ -13,7 +13,7 @@ const Launch: React.FC<Props> = ({ data }) => {
       <div key={launch?.flight_number} className="launch-box">
         <div className="launch-margin">
           <div className="launch-mission">
-            <span className="sp-one">{`${launch?.flight_number}`}</span>
+            <span className="sp-one">{`${launch?.flight_number}. `}</span>
             <Link to={`launch/${launch?.flight_number}`}>
               <span className="sp-two">Mission: {launch?.mission_name}</span>
             </Link>
