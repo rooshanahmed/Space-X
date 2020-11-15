@@ -57,7 +57,7 @@ const Header = () => {
             className={classes.btn}
             disableTouchRipple
             onClick={() => {
-              navigate("launches");
+              navigate("launch");
             }}
           >
             Launches

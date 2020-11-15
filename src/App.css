@@ -12,3 +12,8 @@
   font-size: 14px;
   color: white;
 }
+.main{
+  background-color: black;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
