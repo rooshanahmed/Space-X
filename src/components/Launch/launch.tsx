@@ -48,7 +48,7 @@ const Launch: React.FC<Props> = ({ data }) => {
   return (
     <div className="display-div-launch">
       <div className="heading-space">
-        <h1 style={{ fontFamily: "Comfortaa" }}>Launches</h1>
+        <h1 style={{ fontFamily: "Comfortaa", color: "#fff" }}>Launches</h1>
       </div>
       <div className="display-data-launch">{displayData}</div>
     </div>

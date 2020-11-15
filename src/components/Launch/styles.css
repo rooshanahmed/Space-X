@@ -98,3 +98,7 @@
     margin-top: 60px;
   }
 }
+.root-launch{
+  display: flex;
+  background-color: black;
+}

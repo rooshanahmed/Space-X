@@ -2,6 +2,7 @@ import React from "react";
 import { useLaunchesQuery } from "../../generated/graphql";
 import Launch from "./launch";
 import Loading from "../loading";
+import "./styles.css";
 
 function LaunchFunction() {
   const { data, loading, error } = useLaunchesQuery();
@@ -13,6 +14,10 @@ function LaunchFunction() {
     console.log(error);
     return <div>error</div>;
   }
-  return <Launch data={data} />;
+  return (
+    <div className="root-launch">
+      <Launch data={data} />
+    </div>
+  );
 }
 export default LaunchFunction;
