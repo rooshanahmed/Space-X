@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='launch' element={<LaunchFunction />} />
+          <Route path='launches' element={<LaunchFunction />} />
           <Route path='launch/:id' element={<LaunchDetFunction />} />
         </Routes>
       </div>

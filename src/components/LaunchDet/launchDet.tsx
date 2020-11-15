@@ -22,7 +22,7 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
           <hr />
           <div className="item-site">
             <span className="sp-one">
-              status:{" "}
+              Status:{" "}
               <span className={data.launch?.launch_success ? "true" : "false"}>
                 {data.launch?.launch_success ? "sucessful" : "failed"}
               </span>

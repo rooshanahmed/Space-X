@@ -14,9 +14,7 @@ const Launch: React.FC<Props> = ({ data }) => {
         <div className="launch-margin">
           <div className="launch-mission">
             <span className="sp-one">{`${launch?.flight_number}. `}</span>
-            <Link to={`launch/${launch?.flight_number}`}>
               <span className="sp-two">Mission: {launch?.mission_name}</span>
-            </Link>
           </div>
           <div className="launch-site">
             <span className="sp-one">LaunchSite: </span>

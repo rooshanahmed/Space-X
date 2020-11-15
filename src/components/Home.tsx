@@ -58,7 +58,7 @@ function Home() {
         className={classes.btn}
         disableTouchRipple
         onClick={() => {
-          navigate("launch");
+          navigate("launches");
         }}
       >
         Checkout Launches
