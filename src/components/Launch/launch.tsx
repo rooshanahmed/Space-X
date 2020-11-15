@@ -1,7 +1,7 @@
 import React from "react";
 import { LaunchesQuery } from "../../generated/graphql";
 import { Link } from "react-router-dom";
-import './styles.css';
+import "./styles.css";
 
 interface Props {
   data: LaunchesQuery;
@@ -48,7 +48,7 @@ const Launch: React.FC<Props> = ({ data }) => {
   return (
     <div className="display-div-launch">
       <div className="heading-space">
-        <h1>Launches</h1>
+        <h1 style={{ fontFamily: "Comfortaa" }}>Launches</h1>
       </div>
       <div className="display-data-launch">{displayData}</div>
     </div>
