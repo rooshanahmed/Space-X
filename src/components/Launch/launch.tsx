@@ -1,6 +1,7 @@
 import React from "react";
 import { LaunchesQuery } from "../../generated/graphql";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@material-ui/core";
 import "./styles.css";
 
 interface Props {
@@ -8,13 +9,14 @@ interface Props {
 }
 
 const Launch: React.FC<Props> = ({ data }) => {
+  const navigate = useNavigate();
   const displayData = data.launches?.map((launch, i) => {
     return (
       <div key={launch?.flight_number} className="launch-box">
         <div className="launch-margin">
           <div className="launch-mission">
             <span className="sp-one">{`${launch?.flight_number}. `}</span>
-              <span className="sp-two">Mission: {launch?.mission_name}</span>
+            <span className="sp-two">Mission: {launch?.mission_name}</span>
           </div>
           <div className="launch-site">
             <span className="sp-one">LaunchSite: </span>
@@ -33,11 +35,15 @@ const Launch: React.FC<Props> = ({ data }) => {
             </span>
           </div>
           <div className="launch-btu">
-            <Link to={`launch/${launch?.flight_number}`}>
-              <button>
-                <span>Details</span>
-              </button>
-            </Link>
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "#193D90", color: "#fffff" }}
+              onClick={() => {
+                navigate(`launch/${launch?.flight_number}`);
+              }}
+            >
+              Details
+            </Button>
           </div>
         </div>
       </div>
