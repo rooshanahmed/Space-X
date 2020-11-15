@@ -6,7 +6,7 @@ function Loading() {
   return (
     <div className="loading-center">
       <CircularProgress />
-      <h6>Loading...</h6>
+      <h6 className="loading-text">Loading...</h6>
     </div>
   );
 }

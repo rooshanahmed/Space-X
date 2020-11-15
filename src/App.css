@@ -5,3 +5,7 @@
   margin-top: 250px;
   flex-direction: column;
 }
+.loading-text{
+  font-family: Comfortaa;
+  font-size: 14px;
+}
