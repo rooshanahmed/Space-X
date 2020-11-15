@@ -58,7 +58,7 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
         <hr />
         <div className="launch-btu">
           <Link to="/">
-            <button className="hvr-bounce-to-bottom launch-btn btn">
+            <button>
               <span>Back</span>
             </button>
           </Link>

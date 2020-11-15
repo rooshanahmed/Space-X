@@ -1,7 +1,7 @@
 .box-item{
     margin: 0 auto;
-    background-color: #F5F5F5;
-    max-width: 800px;
+    background-color: #fff;
+    max-width: 900px;
     min-height: 500px;
     border-radius: 20px;
 }

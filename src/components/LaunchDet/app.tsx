@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 function LaunchDetFunction() {
   const { id } = useParams();
   const { data, loading, error } = useLaunhDetailQuery({
-    variables: { id: id },
+    variables: { id : id },
   });
 
   if (loading) {
