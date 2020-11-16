@@ -6,10 +6,12 @@ import LaunchFunction from "./components/Launch/app";
 import Home from "./components/Home";
 import LaunchDetFunction from "./components/LaunchDet/app";
 import Outleto from "./components/Outlet";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="main">
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
