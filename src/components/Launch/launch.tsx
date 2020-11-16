@@ -40,7 +40,7 @@ const Launch: React.FC<Props> = ({ data }) => {
               disableTouchRipple
               style={{ backgroundColor: "#193D90" }}
               onClick={() => {
-                navigate(`launch/${launch?.flight_number}`);
+                navigate(`${launch?.flight_number}`);
               }}
             >
               Details
