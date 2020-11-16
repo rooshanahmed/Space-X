@@ -58,9 +58,15 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
         <div className="back">
           <Button
             disableTouchRipple
+            variant="contained"
             className="button"
             onClick={() => {
               navigate("/launches");
+            }}
+            style={{
+              backgroundColor: "#193D90",
+              color: "#fff",
+              padding: "8px",
             }}
           >
             Back
