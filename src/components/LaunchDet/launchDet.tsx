@@ -1,7 +1,7 @@
 import React from "react";
 import { LaunhDetailQuery } from "../../generated/graphql";
 import "./styles.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 interface Props {
   data: LaunhDetailQuery;
 }
@@ -19,7 +19,6 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
             <span className="sp-one">Launch date: </span>
             <span className="sp-3">{data.launch?.launch_date_local}</span>
           </div>
-          <hr />
           <div className="item-site">
             <span className="sp-one">
               Status:{" "}
@@ -28,12 +27,10 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
               </span>
             </span>
           </div>
-          <hr />
           <div className="item-site">
             <span className="sp-one">Rocket: </span>
             <span className="sp-3">{data.launch?.rocket?.rocket_name}</span>
           </div>
-          <hr />
         </div>
         <div className="item-p">
           <p>{data.launch?.details}</p>
@@ -55,14 +52,14 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
             )}
           </div>
         )}
-        <hr />
+        {/* <hr />
         <div className="launch-btu">
           <Link to="/">
             <button>
               <span>Back</span>
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

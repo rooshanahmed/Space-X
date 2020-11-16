@@ -1,9 +1,14 @@
+.item-margin{
+    margin-top: 180px;
+}
 .box-item{
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #bababa;
     max-width: 900px;
     min-height: 500px;
     border-radius: 20px;
+    text-align: center;
+    font-family: Comfortaa;
 }
 .item-mission{
     text-align: center;
