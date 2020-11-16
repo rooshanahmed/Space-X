@@ -1,12 +1,15 @@
 import React from "react";
 import { LaunhDetailQuery } from "../../generated/graphql";
 import "./styles.css";
-// import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
+import { useNavigate } from "react-router-dom";
 interface Props {
   data: LaunhDetailQuery;
 }
 
 const LaunchDet: React.FC<Props> = ({ data }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="item-margin">
       <div className="box-item">
@@ -52,14 +55,17 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
             )}
           </div>
         )}
-        {/* <hr />
-        <div className="launch-btu">
-          <Link to="/">
-            <button>
-              <span>Back</span>
-            </button>
-          </Link>
-        </div> */}
+        <div className="back">
+          <Button
+            disableTouchRipple
+            className="button"
+            onClick={() => {
+              navigate("/launches");
+            }}
+          >
+            Back
+          </Button>
+        </div>
       </div>
     </div>
   );

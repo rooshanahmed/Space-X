@@ -9,6 +9,7 @@
     border-radius: 20px;
     text-align: center;
     font-family: Comfortaa;
+    
 }
 .item-mission{
     text-align: center;
@@ -63,4 +64,13 @@
     .box-item{
     border-radius: 0;   
     }
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin-top: 30px;
+    display: flex;
 }
