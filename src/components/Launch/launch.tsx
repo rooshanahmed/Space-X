@@ -37,6 +37,7 @@ const Launch: React.FC<Props> = ({ data }) => {
           <div className="launch-btu">
             <Button
               variant="contained"
+              disableTouchRipple
               style={{ backgroundColor: "#193D90" }}
               onClick={() => {
                 navigate(`launch/${launch?.flight_number}`);
