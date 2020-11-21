@@ -30,7 +30,7 @@ const Launch: React.FC<Props> = ({ data }) => {
             <span className="sp-one">
               Status:{" "}
               <span className={launch?.launch_success ? "true" : "false"}>
-                {launch?.launch_success ? "sucessful" : "failed"}
+                {launch?.launch_success ? "successful" : "failed"}
               </span>
             </span>
           </div>
