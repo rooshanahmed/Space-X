@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: "center",
       fontFamily: "Comfortaa",
       marginBottom: "200px",
+      [theme.breakpoints.down("md")]: {
+        fontSize: "32px",
+      },
     },
     x: {
       color: "#005288",
@@ -38,18 +41,18 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: "transparent",
       border: "1px solid #005288",
       width: "400px",
-      textTransform: 'capitalize',
+      textTransform: "capitalize",
       cursor: "pointer",
       "&:hover": {
         // backgroundColor: "#005288",
-        background: 'linear-gradient(45deg, #0071bb 30%, #005288 90%)',
+        background: "linear-gradient(45deg, #0071bb 30%, #005288 90%)",
         color: "#fff",
         cursor: "pointer",
         transition: "all 0.5 ease-in-out",
       },
-      [theme.breakpoints.down("md")]:{
-        width: "250px"
-      }
+      [theme.breakpoints.down("md")]: {
+        width: "250px",
+      },
     },
   })
 );
