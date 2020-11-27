@@ -58,7 +58,7 @@ const Header = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar className={classes.app} elevation={0}>
+      <AppBar className={classes.app} elevation={0} position="absolute">
         <Toolbar className={classes.appBarWrapper}>
           <img
             src={spacex}
