@@ -25,12 +25,13 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: "0 auto",
     },
     btn: {
-      display: "flex",
-      marginLeft: "auto",
-      width: "80%",
       color: "#fff",
       fontFamily: "Comfortaa",
       fontSize: "1rem",
+      margin: "20px",
+    },
+    buttonDiv: {
+      marginLeft: "auto",
     },
   })
 );
@@ -43,25 +44,35 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar className={classes.app} elevation={0}>
         <Toolbar className={classes.appBarWrapper}>
-          <img src={spacex} alt="spacex" height="100px" width="300px" />
-          <Button
-            className={classes.btn}
-            disableTouchRipple
+          <img
+            src={spacex}
+            alt="spacex"
+            height="100px"
+            width="300px"
             onClick={() => {
               navigate("/");
             }}
-          >
-            Home
-          </Button>
-          <Button
-            className={classes.btn}
-            disableTouchRipple
-            onClick={() => {
-              navigate("launches");
-            }}
-          >
-            Launches
-          </Button>
+          />
+          <div className={classes.buttonDiv}>
+            <Button
+              className={classes.btn}
+              disableTouchRipple
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Home
+            </Button>
+            <Button
+              className={classes.btn}
+              disableTouchRipple
+              onClick={() => {
+                navigate("launches");
+              }}
+            >
+              Launches
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
     </div>
