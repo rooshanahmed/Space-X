@@ -35,10 +35,16 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: "100px",
       fontSize: "1.2rem",
       color: "#fff",
-      backgroundColor: "#005288",
+      backgroundColor: "transparent",
+      border: "1px solid #005288",
+      width: "400px",
+      textTransform: 'capitalize',
+      cursor: "pointer",
       "&:hover": {
-        backgroundColor: "black",
-        color: "#A7A9AC",
+        // backgroundColor: "#005288",
+        background: 'linear-gradient(45deg, #0071bb 30%, #005288 90%)',
+        color: "#fff",
+        cursor: "pointer",
       },
     },
   })
@@ -54,9 +60,9 @@ function Home() {
         Welcome To Space<span className={classes.x}>X</span>
       </Typography>
       <Button
-        variant="contained"
         className={classes.btn}
         disableTouchRipple
+        disableElevation
         onClick={() => {
           navigate("launches");
         }}
