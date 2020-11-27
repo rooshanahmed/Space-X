@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme: Theme) =>
         background: 'linear-gradient(45deg, #0071bb 30%, #005288 90%)',
         color: "#fff",
         cursor: "pointer",
+        transition: "all 0.5 ease-in-out",
       },
     },
   })
