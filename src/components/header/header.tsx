@@ -23,15 +23,31 @@ const useStyles = makeStyles((theme: Theme) =>
     appBarWrapper: {
       width: "80%",
       margin: "0 auto",
+      [theme.breakpoints.down("md")]: {
+        width: "100%",
+        margin: "0",
+      },
     },
     btn: {
       color: "#fff",
       fontFamily: "Comfortaa",
       fontSize: "1rem",
       margin: "20px",
+      [theme.breakpoints.down("md")]: {
+        fontSize: "14px",
+        margin: "5px",
+      },
     },
     buttonDiv: {
       marginLeft: "auto",
+      [theme.breakpoints.down("md")]: {
+        marginLeft: "0",
+      },
+    },
+    img: {
+      [theme.breakpoints.down("md")]: {
+        width: "180px",
+      },
     },
   })
 );
@@ -47,6 +63,7 @@ const Header = () => {
           <img
             src={spacex}
             alt="spacex"
+            className={classes.img}
             height="100px"
             width="300px"
             onClick={() => {

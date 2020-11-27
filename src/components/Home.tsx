@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme: Theme) =>
         cursor: "pointer",
         transition: "all 0.5 ease-in-out",
       },
+      [theme.breakpoints.down("md")]:{
+        width: "250px"
+      }
     },
   })
 );
