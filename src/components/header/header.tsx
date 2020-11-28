@@ -8,7 +8,7 @@ import {
   Button,
 } from "@material-ui/core";
 import spacex from "../assets/spacex.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -60,16 +60,15 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar className={classes.app} elevation={0} position="absolute">
         <Toolbar className={classes.appBarWrapper}>
-          <img
-            src={spacex}
-            alt="spacex"
-            className={classes.img}
-            height="100px"
-            width="300px"
-            onClick={() => {
-              navigate("/");
-            }}
-          />
+          <Link to="/">
+            <img
+              src={spacex}
+              alt="spacex"
+              className={classes.img}
+              height="100px"
+              width="300px"
+            />
+          </Link>
           <div className={classes.buttonDiv}>
             <Button
               className={classes.btn}
