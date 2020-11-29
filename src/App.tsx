@@ -6,9 +6,16 @@ import Home from "./components/Home";
 import LaunchDetFunction from "./components/LaunchDet/app";
 import Outleto from "./components/Outlet";
 import ScrollToTop from "./components/ScrollToTop";
+import firebase from "./Firebase";
 import "./App.css";
 
 function App() {
+  const messaging = firebase.messaging();
+
+  messaging.requestPermission().then(() => {
+    return messaging.getToken();
+  })
+
   return (
     <div className="main">
       <ScrollToTop />
