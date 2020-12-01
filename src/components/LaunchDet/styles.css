@@ -9,7 +9,7 @@
     border-radius: 20px;
     text-align: center;
     font-family: Comfortaa;
-    box-shadow: 500px;
+    box-shadow: 5   00px;
 }
 .item-mission{
     text-align: center;
@@ -71,6 +71,5 @@
     justify-content: center;
 }
 .button{
-    margin-top: 30px;
     display: flex;
 }

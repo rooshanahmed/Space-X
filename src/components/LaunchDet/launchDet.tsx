@@ -66,7 +66,8 @@ const LaunchDet: React.FC<Props> = ({ data }) => {
             style={{
               backgroundColor: "#193D90",
               color: "#fff",
-              padding: "8px",
+              width: "120px",
+              marginBottom: "20px",
             }}
           >
             Back
